@@ -16,12 +16,22 @@ public class Book
   //same number of parameters as instance data
   {
     //instance data getting populated/assgined value _ (y) when we create object
-    title = t;
-    author = a;
-    year = y;
-    numPages = n;
-    hardcover = h;
+    setTitle(t);
+    setAuthor(a);
+    setYear(y);
+    setNumPages(n);
+    setHardcover(h);
   }
+
+
+
+
+//Overloading the constructor
+public Book()
+{
+  this("none","unknown",1900,1,false);
+}
+
  //Accesor Methods
  public String getTitle()
  {
